@@ -1,0 +1,15 @@
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\bin\Debug\net6.0\InterviewsAndAlgorithms.exe
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\bin\Debug\net6.0\InterviewsAndAlgorithms.deps.json
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\bin\Debug\net6.0\InterviewsAndAlgorithms.runtimeconfig.json
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\bin\Debug\net6.0\InterviewsAndAlgorithms.dll
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\bin\Debug\net6.0\InterviewsAndAlgorithms.pdb
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\obj\Debug\net6.0\InterviewsAndAlgorithms.csproj.AssemblyReference.cache
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\obj\Debug\net6.0\InterviewsAndAlgorithms.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\obj\Debug\net6.0\InterviewsAndAlgorithms.AssemblyInfoInputs.cache
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\obj\Debug\net6.0\InterviewsAndAlgorithms.AssemblyInfo.cs
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\obj\Debug\net6.0\InterviewsAndAlgorithms.csproj.CoreCompileInputs.cache
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\obj\Debug\net6.0\InterviewsAndAlgorithms.dll
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\obj\Debug\net6.0\refint\InterviewsAndAlgorithms.dll
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\obj\Debug\net6.0\InterviewsAndAlgorithms.pdb
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\obj\Debug\net6.0\InterviewsAndAlgorithms.genruntimeconfig.cache
+E:\Projects\Pamięć Mięśniowa\Algorytmy wywiady\InterviewsAndAlgorithms\InterviewsAndAlgorithms\obj\Debug\net6.0\ref\InterviewsAndAlgorithms.dll
