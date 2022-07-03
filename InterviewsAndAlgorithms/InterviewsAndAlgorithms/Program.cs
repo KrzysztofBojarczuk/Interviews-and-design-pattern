@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+
 for (int i = 2; i < 100; i++)
 {
     if (LiczbyPierwsze(i))
@@ -17,11 +18,11 @@ bool LiczbyPierwsze(int a)
 
     for (int i = 2; i <= Math.Sqrt(a); i++)
     {
-        if (a % i ==0)
+        if (a % i == 0)
         {
             return false;
         }
 
     }
-        return true;
+    return true;
 }
