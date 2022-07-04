@@ -1,27 +1,32 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-for (int i = 2; i < 100; i++)
+
+int[] tabl = new int[] { 1, 2, 3, 2 - 7, 44, 5, 1, 0 - 3 };
+
+for (int i = 0; i < tabl.Length; i++)
 {
-    if (LiczbyPierwsze(i))
-    {
-        Console.WriteLine("Liczba pierwsza: " + i + " jest pierwsza");
-    }
+    Console.WriteLine($"t{ "[" + tabl[i] + "]"} = " + $"{tabl[i]}");
 }
+Console.WriteLine("=================");
+Search(tabl, 0,tabl.Length-1,7);
+Search(tabl, 0,tabl.Length-1,5);
 
-bool LiczbyPierwsze(int a)
+
+void Search(int[] tab, int left, int right, int x)
 {
-    if (a <= 2)
+    if (left < right)
     {
-        return false;
+        Console.WriteLine("Item not found: " + x);
     }
-
-    for (int i = 2; i <= Math.Sqrt(a); i++)
+    else
     {
-        if (a % i ==0)
+        if (tab[left] == x)
         {
-            return false;
+            Console.WriteLine("Item found: " + x);
         }
-
+        else
+        {
+            Search(tab, left + 1, right, x);
+        }
     }
-        return true;
 }
