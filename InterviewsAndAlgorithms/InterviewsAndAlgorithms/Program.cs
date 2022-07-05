@@ -1,27 +1,30 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-for (int i = 2; i < 100; i++)
+int firstNumber = 0;
+int secondNumber = 1;
+
+for (int i = 2; i <= 10; i++)
 {
-    if (LiczbyPierwsze(i))
-    {
-        Console.WriteLine("Liczba pierwsza: " + i + " jest pierwsza");
-    }
+    int result = firstNumber + secondNumber;
+    firstNumber = secondNumber;
+    secondNumber = result;
+    Console.WriteLine(result);
+
+}
+Console.WriteLine("=====================");
+for (int i = 1; i < 15; i++)
+{
+    Console.WriteLine($" {Fib(i)}");
 }
 
-bool LiczbyPierwsze(int a)
+static int Fib(int x)
 {
-    if (a <= 2)
+    if (x < 2)
     {
-        return false;
+        return x;
     }
-
-    for (int i = 2; i <= Math.Sqrt(a); i++)
+    else
     {
-        if (a % i ==0)
-        {
-            return false;
-        }
-
+        return Fib(x - 1) + Fib(x - 2);
     }
-        return true;
 }
