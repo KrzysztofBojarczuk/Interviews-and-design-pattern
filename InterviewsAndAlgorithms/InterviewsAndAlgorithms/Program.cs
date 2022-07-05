@@ -1,32 +1,30 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+int firstNumber = 0;
+int secondNumber = 1;
 
-int[] tabl = new int[] { 1, 2, 3, 2 - 7, 44, 5, 1, 0 - 3 };
-
-for (int i = 0; i < tabl.Length; i++)
+for (int i = 2; i <= 10; i++)
 {
-    Console.WriteLine($"t{ "[" + tabl[i] + "]"} = " + $"{tabl[i]}");
+    int result = firstNumber + secondNumber;
+    firstNumber = secondNumber;
+    secondNumber = result;
+    Console.WriteLine(result);
+
 }
-Console.WriteLine("=================");
-Search(tabl, 0,tabl.Length-1,7);
-Search(tabl, 0,tabl.Length-1,5);
-
-
-void Search(int[] tab, int left, int right, int x)
+Console.WriteLine("=====================");
+for (int i = 1; i < 15; i++)
 {
-    if (left < right)
+    Console.WriteLine($" {Fib(i)}");
+}
+
+static int Fib(int x)
+{
+    if (x < 2)
     {
-        Console.WriteLine("Item not found: " + x);
+        return x;
     }
     else
     {
-        if (tab[left] == x)
-        {
-            Console.WriteLine("Item found: " + x);
-        }
-        else
-        {
-            Search(tab, left + 1, right, x);
-        }
+        return Fib(x - 1) + Fib(x - 2);
     }
 }
