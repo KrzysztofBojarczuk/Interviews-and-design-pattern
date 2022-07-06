@@ -1,27 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-for (int i = 2; i < 100; i++)
+
+int number = 1;
+
+int n = 6;
+for (int i = 1; i <= n; i++)
 {
-    if (LiczbyPierwsze(i))
-    {
-        Console.WriteLine("Liczba pierwsza: " + i + " jest pierwsza");
-    }
+    number = number * i;
 }
 
-bool LiczbyPierwsze(int a)
-{
-    if (a <= 2)
-    {
-        return false;
-    }
-
-    for (int i = 2; i <= Math.Sqrt(a); i++)
-    {
-        if (a % i ==0)
-        {
-            return false;
-        }
-
-    }
-        return true;
-}
+Console.WriteLine($"Factorial of {n} is: {number}" );
