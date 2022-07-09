@@ -1,12 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-int number = 1;
+int[] tablica = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-int n = 6;
-for (int i = 1; i <= n; i++)
+string name = "Tomek";
+
+
+for (int i = tablica.Length - 1; i >= 0; i--)
 {
-    number = number * i;
+    Console.Write(tablica[i]);
 }
 
-Console.WriteLine($"Factorial of {n} is: {number}" );
+
+char[] reverse = name.ToCharArray();
+
+var reverseName = reverse.Reverse();
+
+foreach (var item in reverseName)
+{
+    Console.Write(item);
+}
