@@ -1,27 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-for (int i = 2; i < 100; i++)
+
+int[] tablica = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+string name = "Tomek";
+
+
+for (int i = tablica.Length - 1; i >= 0; i--)
 {
-    if (LiczbyPierwsze(i))
-    {
-        Console.WriteLine("Liczba pierwsza: " + i + " jest pierwsza");
-    }
+    Console.Write(tablica[i]);
 }
 
-bool LiczbyPierwsze(int a)
+
+char[] reverse = name.ToCharArray();
+
+var reverseName = reverse.Reverse();
+
+foreach (var item in reverseName)
 {
-    if (a <= 2)
-    {
-        return false;
-    }
-
-    for (int i = 2; i <= Math.Sqrt(a); i++)
-    {
-        if (a % i ==0)
-        {
-            return false;
-        }
-
-    }
-        return true;
+    Console.Write(item);
 }
