@@ -1,22 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+using InterviewsAndAlgorithms.Singleton;
+
 int[] tablica = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-string name = "Tomek";
+Singleton object1 = Singleton.GetInstance();
+Singleton object2 = Singleton.GetInstance();
 
 
-for (int i = tablica.Length - 1; i >= 0; i--)
+if (object1 == object2)
 {
-    Console.Write(tablica[i]);
+    Console.WriteLine("There objects are the same");
+}
+else
+{
+    Console.WriteLine("There objects are different");
 }
 
-
-char[] reverse = name.ToCharArray();
-
-var reverseName = reverse.Reverse();
-
-foreach (var item in reverseName)
-{
-    Console.Write(item);
-}
+int val = 0;
