@@ -1,27 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-for (int i = 2; i < 100; i++)
+
+using InterviewsAndAlgorithms.Singleton;
+
+int[] tablica = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+Singleton object1 = Singleton.GetInstance();
+Singleton object2 = Singleton.GetInstance();
+
+
+if (object1 == object2)
 {
-    if (LiczbyPierwsze(i))
-    {
-        Console.WriteLine("Liczba pierwsza: " + i + " jest pierwsza");
-    }
+    Console.WriteLine("There objects are the same");
+}
+else
+{
+    Console.WriteLine("There objects are different");
 }
 
-bool LiczbyPierwsze(int a)
-{
-    if (a <= 2)
-    {
-        return false;
-    }
-
-    for (int i = 2; i <= Math.Sqrt(a); i++)
-    {
-        if (a % i ==0)
-        {
-            return false;
-        }
-
-    }
-        return true;
-}
+int val = 0;
