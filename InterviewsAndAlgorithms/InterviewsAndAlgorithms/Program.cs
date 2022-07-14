@@ -23,6 +23,8 @@ int[] tablica = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 //4  Proxy Pattern
 
+//The Proxy class implements the interface so that it can act as substitute for Subject objects
+//The Client object works through a Proxy object that controls the access to a RealSubject object.
 ISuperSecretDatabase database = new SuperSecretDatabaseProxy("textdb","Password");
 database.DisplayDatabaseName();
 
