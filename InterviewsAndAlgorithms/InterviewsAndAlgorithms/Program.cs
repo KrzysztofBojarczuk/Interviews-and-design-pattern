@@ -4,6 +4,7 @@
 using InterviewsAndAlgorithms.Adapter;
 using InterviewsAndAlgorithms.Adapter.DataProccessor;
 using InterviewsAndAlgorithms.Adapter.Network;
+using InterviewsAndAlgorithms.ChainOfResponsibility;
 using InterviewsAndAlgorithms.Facade;
 using InterviewsAndAlgorithms.Proxy;
 using InterviewsAndAlgorithms.Singleton;
@@ -27,6 +28,16 @@ int[] tablica = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 //The Client object works through a Proxy object that controls the access to a RealSubject object.
 ISuperSecretDatabase database = new SuperSecretDatabaseProxy("textdb","Password");
 database.DisplayDatabaseName();
+
+//5 Chain Of Responsibility
+IChain ob1 = new SendSSH();
+IChain ob2 = new SendPing();
+IChain ob3 = new SendARP();
+ob1.SetNext(ob2);
+ob2.SetNext(ob3);
+NetworkModel request = new NetworkModel("8.8.8.8", false);
+ob1.SendRequest(request);
+
 
 INetworkClient network = new NetworkClient();
 network.SendRequest("9.6.6.6");
