@@ -3,13 +3,13 @@
 
 for (int i = 2; i < 100; i++)
 {
-    if (LiczbyPierwsze(i))
+    if (FirstNumbers(i))
     {
-        Console.WriteLine("Liczba pierwsza: " + i + " jest pierwsza");
+        Console.WriteLine("First Number: " + i + " if First Number");
     }
 }
 
-bool LiczbyPierwsze(int a)
+bool FirstNumbers(int a)
 {
     if (a <= 2)
     {
