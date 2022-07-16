@@ -8,6 +8,7 @@ using InterviewsAndAlgorithms.ChainOfResponsibility;
 using InterviewsAndAlgorithms.Facade;
 using InterviewsAndAlgorithms.Proxy;
 using InterviewsAndAlgorithms.Singleton;
+using InterviewsAndAlgorithms.Strategy;
 
 int[] tablica = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
@@ -26,6 +27,10 @@ int[] tablica = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 //The Proxy class implements the interface so that it can act as substitute for Subject objects
 //The Client object works through a Proxy object that controls the access to a RealSubject object.
+
+//6  Strategy Pattern  Enables algorithms behavior to be selected at runtime
+
+//4  Proxy Pattern
 ISuperSecretDatabase database = new SuperSecretDatabaseProxy("textdb","Password");
 database.DisplayDatabaseName();
 
@@ -39,6 +44,16 @@ NetworkModel request = new NetworkModel("8.8.8.8", false);
 ob1.SendRequest(request);
 
 
+//6  Strategy Pattern  Enables algorithms behavior to be selected at runtime
+Context context = new Context(new ARP());
+Context contextTwo = new Context(new Ping());
+Context contextThree = new Context(new DNS());
+context.ExecuteStrategy();
+contextTwo.ExecuteStrategy();
+contextThree.ExecuteStrategy();
+
+// 2 Facade Pattern
+
 INetworkClient network = new NetworkClient();
 network.SendRequest("9.6.6.6");
 IDataProccessor dataPro = new DataProcessor();
@@ -47,6 +62,7 @@ dataPro.SendNetworkRequest("8.8.7","1234");
 NetworkAdapter adapter = new NetworkAdapter(dataPro);
 adapter.SendRequest("8.8.7");
 
+// 1 Singleton Pattern 
 Singleton object1 = Singleton.GetInstance();
 Singleton object2 = Singleton.GetInstance();
 
