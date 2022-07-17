@@ -1,28 +1,24 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-
-for (int i = 2; i < 100; i++)
+using (var printCSV = new PrintCSV())
 {
-    if (FirstNumbers(i))
+    
+}
+public class Print : IDisposable
+{
+    public void Dispose()
     {
-        Console.WriteLine("First Number: " + i + " if First Number");
+        Console.WriteLine("I am doing Print");
     }
 }
-
-bool FirstNumbers(int a)
+public class PrintCSV : Print
 {
-    if (a <= 2)
+    public void Dispose()
     {
-        return false;
+        Console.WriteLine("I am doing PrintCSV");
     }
-
-    for (int i = 2; i <= Math.Sqrt(a); i++)
+    public void PrintCSvMEthod()
     {
-        if (a % i == 0)
-        {
-            return false;
-        }
-
+        Console.WriteLine("I am printing PrintCSvMEthod");
     }
-    return true;
 }
