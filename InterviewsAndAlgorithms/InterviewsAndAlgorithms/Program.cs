@@ -1,27 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using InterviewsAndAlgorithms.Delegates;
 
-for (int i = 2; i < 100; i++)
-{
-    if (LiczbyPierwsze(i))
-    {
-        Console.WriteLine("Liczba pierwsza: " + i + " jest pierwsza");
-    }
-}
 
-bool LiczbyPierwsze(int a)
-{
-    if (a <= 2)
-    {
-        return false;
-    }
 
-    for (int i = 2; i <= Math.Sqrt(a); i++)
-    {
-        if (a % i ==0)
-        {
-            return false;
-        }
 
-    }
-        return true;
-}
+DelegateClass delegateClass = new DelegateClass();
+
+
+Func<int, int,int> funcDelegate = delegateClass.Calc;
+Console.WriteLine(funcDelegate(5,5));
+Action actionDelgate = delegateClass.Show;
+actionDelgate();
+Predicate<int> predicateDelgate = delegateClass.GraterThenTen;
+Console.WriteLine(predicateDelgate(15));
