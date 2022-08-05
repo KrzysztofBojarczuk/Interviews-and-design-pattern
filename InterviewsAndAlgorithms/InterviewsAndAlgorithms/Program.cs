@@ -1,24 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using InterviewsAndAlgorithms.Delegates;
 
-using (var printCSV = new PrintCSV())
-{
-    //frees or resets unmanaged resources clears memory
-}
-public class Print : IDisposable
-{
-    public void Dispose()
-    {
-        Console.WriteLine("I am doing Print");
-    }
-}
-public class PrintCSV : Print
-{
-    public void Dispose()
-    {
-        Console.WriteLine("I am doing PrintCSV");
-    }
-    public void PrintCSvMEthod()
-    {
-        Console.WriteLine("I am printing PrintCSvMEthod");
-    }
-}
+
+
+
+DelegateClass delegateClass = new DelegateClass();
+
+
+Func<int, int,int> funcDelegate = delegateClass.Calc;
+Console.WriteLine(funcDelegate(5,5));
+Action actionDelgate = delegateClass.Show;
+actionDelgate();
+Predicate<int> predicateDelgate = delegateClass.GraterThenTen;
+Console.WriteLine(predicateDelgate(15));
